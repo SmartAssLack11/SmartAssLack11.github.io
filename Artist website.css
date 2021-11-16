@@ -1,0 +1,421 @@
+header {
+    width: 100%;
+    height: 1000px;
+    background-image: url(20210828-162148_MWMartin%20Wallen_6762.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 3px solid white;
+    /*Add in opacity 0.5 for background image*/
+}
+
+.nav {
+    background-color: transparent;
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+
+.nav a {
+    color: black;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: floralwhite;
+}
+
+.logo {
+    width: 100%;
+    max-width: 169px;
+    padding: 20px;
+    float: left;
+}
+
+/*Social media icons*/
+.icons {
+    position: absolute;
+    margin: 0;
+    display: block;
+    float: right;
+    justify-items: center;
+    top: 24%;
+    right: 0;
+}
+
+.icons a {
+    padding: 20px 20px;
+    text-align: center;
+    display: block;
+    opacity: 0.5;
+}
+
+.icons a:hover {
+    opacity: 1;
+}
+
+/*Logo title 
+"Älva Läckgren"*/
+h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 53px 20px 0 20px;
+    font-size: 85px;
+    font-weight: lighter;
+    font-family: NSimSun;
+    transform: scale(1, 1.1);
+    letter-spacing: 8px;
+}
+
+/*Header center titles
+"About me"  "Album and EP's"  "Videos"*/
+h2 {
+    font-size: 85px;
+    font-weight: bolder;
+    font-family: NSimSun;
+    display: block;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    margin: 0;
+    text-align: center;
+    padding-top: 280px;
+}
+
+/*Texts to clickable links on 'Home' page
+"Music"  "Videos"  "About"*/
+h3 {
+    display: inline-block;
+    padding: 72px;
+    margin: 0;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    font-size: 100px;
+}
+
+/*Paragraph titles*/
+h4 {
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: NSimSun;
+}
+
+/*Album name and artist name*/
+h5{
+    margin: 0;
+    color: black;
+    font-family: "";
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(white, #3d3d3d);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 35px;
+}
+
+/*----------------------Home page---------------------*/
+#home-container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    margin: 0;
+}
+
+.left {
+    position: relative;
+    width: 50%;
+    height: 1000px;
+    float: left;
+    background-image: url(Blurred%20cropped%20clouds.png);
+    background-size: cover;
+    margin: 0;
+}
+
+.list-box {
+    position: relative;
+    background: transparent;
+    width: 650px;
+    height: 780px;
+    margin: auto;
+}
+
+.right {
+    width: 50%;
+    height: 1000px;
+    float: right;
+    background: radial-gradient(at top right, #3d3d3d, darkgray, white);
+}
+
+.image {
+    position: absolute;
+    height: auto;
+    width: 21vw;
+    bottom: 0;
+    right: 0;
+}
+
+/*Clickable pictures leading to other pages*/
+#home-wrapper {
+    width: 100%;
+    height: auto;
+    background: white;
+    display: flex;
+}
+
+.left-box {
+    width: 33.3%;
+    height: 260px;
+    margin: 20px;
+    background-image: url(Music-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.center-box {
+    width: 33.3%;
+    height: 260px;
+    margin: 20px;
+    background-image: url(Videos-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.right-box {
+    width: 33.3%;
+    height: 260px;
+    margin: 20px;
+    background-image: url(About-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.left-box:hover, .center-box:hover, .right-box:hover {
+    opacity: 1;
+}
+
+/*--------------------Videos page--------------------------*/
+#video-container {
+    position: relative;
+    background-image: url(Opacitized90.3-On%20stage.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background: transparent;
+}
+
+.video-box {
+    position: absolute;
+    width: 75%;
+    height: auto;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*--------------------Music page-----------------------*/
+#music-container {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-image: url(Opacitized80-Background5724.png);
+    background-repeat: no-repeat;
+}
+
+#music-wrapper {
+    position: relative;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-column {
+    margin: auto auto;
+    width: 820px;
+    height: 340px;
+    background: transparent;
+}
+
+.album_cover {
+    margin: 18px;
+    background: black;
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+/*--------------------About page----------------------*/
+#background-image {
+    position: relative;
+    width: 100%;
+    height: 1600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(Background5724.jpg);
+}
+
+#about-wrapper {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    top: 370px;
+}
+
+.leftbox {
+    width: 28%;
+    height: 800px;
+    background-image: url(Scream-guitar.jpg);
+    background-position-X: -300px;
+    background-size: cover; 
+    position: relative;
+}
+
+#topright-corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid white;
+    border-left: 80px solid transparent;
+    right: 0;
+    opacity: 0.7;
+}
+
+#bottomright-corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid white;
+    border-left: 80px solid transparent;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+}
+
+.centerbox {
+    width: 44%;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    word-wrap: normal;
+}
+
+/*background opacity*/
+.centerbox {
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.rightbox {
+    width: 28%;
+    height: 800px;
+    background-image: url(Stage-guitar.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#topleft-corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid white;
+    border-right: 80px solid transparent;
+    opacity: 0.7;
+}
+
+#bottomleft-corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid white;
+    border-right: 80px solid transparent;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+/*-----------------Contact page----------------------*/
+#contacts-header {
+    background-image: url(Blacklayer_Background.jpg);
+    width: 100%;
+    height: 500px;
+    background-position-Y: -130px;
+    background-size: cover;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+#form-box {
+    width: 100%;
+    height: 700px;
+    margin: 90px 0 210px 0;
+}
+
+#email, #name {
+    width: 60%;
+    height: 25px;
+    padding: 2px;
+    margin: 3px 0 30px 2px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#message-box {
+    width: 80%;
+    height: 290px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 3px 0px 0px 2px;
+    font-size: 16px;
+    outline: none;
+    vertical-align: top;
+}
+
+input[type=submit] {
+    background-color: #E6E6E6;
+    border: solid 1px black;
+    border-radius: 7px;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin: 30px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+
+.text-style {
+    margin-left: 2px;
+    color: white;
+    font-size: 25px;
+    -webkit-text-stroke: 0.2px black;
+}
